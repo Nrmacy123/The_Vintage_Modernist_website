@@ -1,0 +1,15 @@
+/*
+  File: css/style.css
+  Project: The Vintage Modernist
+  Description: All styles for the website. Uses a scalable structure with variables,
+  global styles, components, and responsive design.
+  Date: 2025-07-29T23:35:50.061Z
+*/
+/* Import all other CSS files. The order is important. */
+@import "base.css";
+@import "components/header.css";
+@import "components/buttons.css";
+@import "components/gallery.css";
+@import "components/forms.css";
+@import "components/footer.css";
+@import "pages/home.css";

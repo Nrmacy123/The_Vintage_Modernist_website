@@ -1,0 +1,87 @@
+.contact-page {
+  padding: 4rem 0;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1.25fr;
+  }
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+  text-align: center;
+}
+.contact-card h3 {
+  margin-bottom: 1rem;
+}
+.contact-card p {
+  margin-bottom: 1.5rem;
+}
+.social-links a {
+  margin: 0 0.75rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.contact-form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+}
+.contact-form-container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-primary);
+  transition: border-color var(--transition-speed) ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+.form-status {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+.form-status.success {
+  color: var(--color-success);
+}
+.form-status.error {
+  color: var(--color-error);
+}

@@ -1,0 +1,10 @@
+/* File: css/components/footer.css
+  Description: Styles for the footer.
+*/
+.footer {
+  background-color: var(--color-green);
+  color: var(--color-off-white);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}

@@ -1,0 +1,66 @@
+/* File: css/pages/home.css
+  Description: Page-specific styles for the homepage hero section.
+*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(24, 45, 9, 0.6), rgba(24, 45, 9, 0.6)),
+    url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070")
+      no-repeat center center/cover;
+  animation: zoom-in 15s ease-out forwards;
+  color: white;
+  text-align: center;
+}
+@keyframes zoom-in {
+  from {
+    background-size: 100% 100%;
+  }
+  to {
+    background-size: 110% 110%;
+  }
+}
+.hero__content {
+  animation: fade-in 1.5s ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero__title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.hero__subtitle {
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--color-off-white);
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ----- Home Page: Feature Section ----- */
+.feature-section {
+  padding: 4rem 0;
+}

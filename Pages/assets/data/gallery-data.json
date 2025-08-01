@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Eames Lounge Chair",
+    "description": "An iconic mid-century piece in restored Palisander rosewood and black leather. A statement of comfort and luxury.",
+    "imageUrl": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1965"
+  },
+  {
+    "id": 2,
+    "title": "Danish Teak Credenza",
+    "description": "A beautiful 1960s credenza with tambour doors and sculpted pulls. Perfect for storage and display.",
+    "imageUrl": "https://images.unsplash.com/photo-1616628188540-925618b98318?q=80&w=1974"
+  },
+  {
+    "id": 3,
+    "title": "Art Deco Brass Mirror",
+    "description": "A stunning, sunburst-style brass mirror from the 1930s. Adds a touch of glamour to any wall.",
+    "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1887"
+  },
+  {
+    "id": 4,
+    "title": "Wassily Chair",
+    "description": "A Model B3 chair, designed by Marcel Breuer. A revolutionary piece made of chromed steel and leather.",
+    "imageUrl": "https://images.unsplash.com/photo-1567016432779-1fee74902353?q=80&w=1887"
+  },
+  {
+    "id": 5,
+    "title": "Serge Mouille Floor Lamp",
+    "description": "An elegant three-arm rotating floor lamp, offering both direct and ambient light with sculptural grace.",
+    "imageUrl": "https://images.unsplash.com/photo-1618220252344-88b9a184b86d?q=80&w=1887"
+  },
+  {
+    "id": 6,
+    "title": "Abstract Expressionist Painting",
+    "description": "A vibrant, large-scale abstract oil on canvas from the 1950s. Artist unknown, energy undeniable.",
+    "imageUrl": "https://images.unsplash.com/photo-1549492423-400259a5e5a9?q=80&w=1854"
+  }
+]
