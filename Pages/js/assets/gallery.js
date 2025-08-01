@@ -1,4 +1,4 @@
-/* File: js/gallery.js (v2)
+/* File: js/assets/gallery.js (v2)
   Project: The Vintage Modernist
   Description: Fetches gallery data and populates the grid with skeleton loaders for improved UX.
 */

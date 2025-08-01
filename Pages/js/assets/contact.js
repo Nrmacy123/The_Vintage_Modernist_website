@@ -1,4 +1,4 @@
-/* File: js/contact.js (New)
+/* File: js/assets/contact.js (New)
   Project: The Vintage Modernist
   Description: Handles contact form submission, provides user feedback, and resets the form.
 */
