@@ -18,8 +18,8 @@ async function initializeApp() {
   // Promise.all allows us to load the header and footer concurrently for better performance.
   // The script will wait here until BOTH are finished loading before proceeding.
   await Promise.all([
-    loadComponent("header-placeholder", "/pages/assets/sections/header.html"),
-    loadComponent("footer-placeholder", "/pages/assets/sections/footer.html"),
+    loadComponent("header-placeholder", "/assets/sections/header.html"),
+    loadComponent("footer-placeholder", "/assets/sections/footer.html"),
   ]);
 
   // Once the header and footer are guaranteed to be on the page,
