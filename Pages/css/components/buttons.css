@@ -15,8 +15,8 @@
   color: white;
 }
 .btn--primary:hover {
-  background-color: #c99a47;
-  color: white;
+  background-color: var(--color-gold-light);
+  color: var(--color-green);
   transform: translateY(-2px);
 }
 
