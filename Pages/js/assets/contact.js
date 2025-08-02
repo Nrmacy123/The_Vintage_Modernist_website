@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       // --- This is the new part that sends data to your Worker ---
       const response = await fetch(
-        'https://your-worker-name.your-account.workers.dev', // <-- PASTE YOUR WORKER URL HERE
+        'https://vintage-modernist-mailer.npeace83.workers.dev', // <-- PASTE YOUR WORKER URL HERE
         {
           method: 'POST',
           headers: {
