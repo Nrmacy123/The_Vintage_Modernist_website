@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "title": "Eames Lounge Chair",
-    "description": "An iconic mid-century piece in restored Palisander rosewood and black leather. A statement of comfort and luxury.",
-    "imageUrl": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1965"
+    "title": "Candles",
+    "description": "We also offer custom homemade candles in unique vintage containers.",
+    "imageUrl": "/assets/images/candles.jpg"
   },
   {
     "id": 2,
-    "title": "Danish Teak Credenza",
-    "description": "A beautiful 1960s credenza with tambour doors and sculpted pulls. Perfect for storage and display.",
-    "imageUrl": "https://images.unsplash.com/photo-1616628188540-925618b98318?q=80&w=1974"
+    "title": "Artwork",
+    "description": "Beautiful art pieces to accent any wall.",
+    "imageUrl": "/assets/images/pictures.jpg"
   },
   {
     "id": 3,
