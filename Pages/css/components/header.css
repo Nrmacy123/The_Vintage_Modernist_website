@@ -1,40 +1,88 @@
-/* File: css/components/header.css
-  Description: Styles for the header and navigation.
-*/
+/* ==========================================================================
+   Base Mobile-First Styles
+   ========================================================================== */
+
+/* --- General Header Styles (Common to All Views) --- */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: rgba(248, 247, 245, 0.85);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #eee;
   padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  
 }
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* --- Logo Styles (Common to All Views) --- */
 .header__logo {
   font-family: var(--font-secondary);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-green);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
+
 .header__logo:hover {
   color: var(--color-gold);
 }
+
+.header__logo img {
+  height: 40px;
+  /* Mobile logo size */
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+/* --- Mobile Navigation (Default) --- */
+
+/* Slide-out Panel (Hidden by default) */
+.header__nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: var(--color-green);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+/* Class added by JS to show the panel */
+.header__nav.active {
+  display: flex;
+  transform: translateX(0);
+}
+
 .header__nav-list {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  /* Vertical list for mobile */
+  gap: 2.5rem;
+  text-align: center;
 }
+
 .header__nav-link {
+  font-size: 1.5rem;
   font-weight: 500;
-  color: var(--color-dark-grey);
+  color: white;
   position: relative;
   padding-bottom: 0.5rem;
 }
+
 .header__nav-link::after {
   content: "";
   position: absolute;
@@ -45,71 +93,82 @@
   background-color: var(--color-gold);
   transition: width var(--transition-speed) ease;
 }
+
 .header__nav-link:hover::after,
 .header__nav-link.active::after {
   width: 100%;
 }
+
+/* Hamburger Menu Icon (Visible by default) */
 .header__menu-toggle {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  height: 25px;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 1001;
+  /* Must be higher than the header's z-index */
 }
 
-@media (max-width: 768px) {
-  .header__nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100vh;
-    background-color: var(--color-green);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform var(--transition-speed) ease-in-out;
+.header__menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-green);
+  border-radius: 3px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Hamburger to "X" Animation */
+.header__menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.header__menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   Desktop Overrides (Applied when screen is 768px or wider)
+   ========================================================================== */
+@media (min-width: 768px) {
+
+  /* Increase logo size on desktop */
+  .header__logo img {
+    height: 72px;
   }
-  .header__nav.active {
-    display: flex;
-    transform: translateX(0);
-  }
-  .header__nav-list {
-    flex-direction: column;
-    gap: 2.5rem;
-    text-align: center;
-  }
-  .header__nav-link {
-    font-size: 1.5rem;
-    color: white;
-  }
-  .header__nav-link.active::after,
-  .header__nav-link:hover::after {
-    background-color: var(--color-gold);
-  }
+
+  /* Hide hamburger menu on desktop */
   .header__menu-toggle {
+    display: none;
+  }
+
+  /* Reset navigation to a standard horizontal bar */
+  .header__nav {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 30px;
-    height: 25px;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transform: none;
+    flex-direction: row;
   }
-  .header__menu-toggle span {
-    width: 100%;
-    height: 3px;
-    background-color: var(--color-green);
-    border-radius: 3px;
-    transition: transform 0.3s, opacity 0.3s;
+
+  .header__nav-list {
+    flex-direction: row;
+    /* Horizontal list on desktop */
+    gap: 2rem;
   }
-  .header__menu-toggle[aria-expanded="true"] span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .header__menu-toggle[aria-expanded="true"] span:nth-child(2) {
-    opacity: 0;
-  }
-  .header__menu-toggle[aria-expanded="true"] span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+
+  /* Reset link styles for desktop */
+  .header__nav-link {
+    font-size: 1rem;
+    color: var(--color-dark-grey);
   }
 }
