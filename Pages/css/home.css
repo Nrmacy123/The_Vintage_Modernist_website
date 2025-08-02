@@ -8,7 +8,7 @@
   height: 90vh;
   min-height: 500px;
   background: linear-gradient(90deg, #5d1a2534 40%, #182d0948 50%),
-    url("/Pages/assets/images/hero-image.png"),
+    url("/assets/images/hero-image.png")
       no-repeat center center/cover;
   animation: zoom-in 20s ease-out forwards;
   color: var(--color-off-white);
