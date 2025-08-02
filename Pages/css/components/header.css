@@ -7,12 +7,11 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(248, 247, 245, 0.85);
+  background-color: #f8f7f5;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #eee;
   padding: 1rem 0;
-  
 }
 
 .header__container {
@@ -38,6 +37,7 @@
 
 .header__logo img {
   height: 40px;
+  margin-left: 20px;
   /* Mobile logo size */
   width: auto;
   transition: height 0.3s ease;
