@@ -37,7 +37,6 @@
 
 .header__logo img {
   height: 40px;
-  margin-left: 20px;
   /* Mobile logo size */
   width: auto;
   transition: height 0.3s ease;
