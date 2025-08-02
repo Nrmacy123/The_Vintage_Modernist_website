@@ -9,30 +9,30 @@
     "id": 2,
     "title": "Artwork",
     "description": "Beautiful art pieces to accent any wall.",
-    "imageUrl": "/assets/images/pictures.jpg"
+    "imageUrl": "/assets/images/artwork.jpg"
   },
   {
     "id": 3,
-    "title": "Art Deco Brass Mirror",
-    "description": "A stunning, sunburst-style brass mirror from the 1930s. Adds a touch of glamour to any wall.",
-    "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1887"
+    "title": "Antique Chair",
+    "description": "An antique wooden chair royal blue plush finish.",
+    "imageUrl": "/assets/images/chair.jpg"
   },
   {
     "id": 4,
-    "title": "Wassily Chair",
-    "description": "A Model B3 chair, designed by Marcel Breuer. A revolutionary piece made of chromed steel and leather.",
-    "imageUrl": "https://images.unsplash.com/photo-1567016432779-1fee74902353?q=80&w=1887"
+    "title": "Large Antique Furniture",
+    "description": "So many large pieces from Hutches to couches to coffee tables.",
+    "imageUrl": "/assets/images/large-furniture.jpg"
   },
   {
     "id": 5,
-    "title": "Serge Mouille Floor Lamp",
-    "description": "An elegant three-arm rotating floor lamp, offering both direct and ambient light with sculptural grace.",
-    "imageUrl": "https://images.unsplash.com/photo-1618220252344-88b9a184b86d?q=80&w=1887"
+    "title": "Lamps",
+    "description": "Lamps in any kind of style from mid-century to art deco.",
+    "imageUrl": "/assets/images/lamps.jpg"
   },
   {
     "id": 6,
-    "title": "Abstract Expressionist Painting",
-    "description": "A vibrant, large-scale abstract oil on canvas from the 1950s. Artist unknown, energy undeniable.",
-    "imageUrl": "https://images.unsplash.com/photo-1549492423-400259a5e5a9?q=80&w=1854"
+    "title": "Huge Inventory",
+    "description": "A lot more that we are working on listing.",
+    "imageUrl": "/assets/images/huge-inventory.jpg"
   }
 ]
